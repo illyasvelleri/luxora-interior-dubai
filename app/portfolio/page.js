@@ -361,7 +361,7 @@ export default function Portfolio() {
             Every institutional project represents a unique partnership between design discipline and organizational vision. We invite enquiries from organizations seeking permanent architectural solutions.
           </p>
           <Link
-            href="/#contact"
+            href="/contact"
             className="inline-block px-10 sm:px-12 md:px-14 py-4 sm:py-5 border border-[#d4af37]/60 text-[#d4af37] hover:bg-[#d4af37]/10 transition-all duration-700 text-xs tracking-[0.3em]"
           >
             REQUEST CONSULTATION
