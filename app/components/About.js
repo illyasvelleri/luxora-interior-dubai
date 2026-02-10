@@ -1,0 +1,130 @@
+'use client';
+
+import Image from "next/image"
+import { useEffect, useRef, useState } from "react"
+
+/* ---------- CountUp Hook ---------- */
+function useCountUp(target, duration = 1200) {
+  const [value, setValue] = useState(0)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return
+        observer.disconnect()
+
+        let start = 0
+        const step = Math.ceil(target / (duration / 16))
+
+        const counter = setInterval(() => {
+          start += step
+          if (start >= target) {
+            setValue(target)
+            clearInterval(counter)
+          } else {
+            setValue(start)
+          }
+        }, 16)
+      },
+      { threshold: 0.4 }
+    )
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [target, duration])
+
+  return { value, ref }
+}
+
+/* ---------- About Section ---------- */
+export default function About() {
+  const projects = useCountUp(150)
+  const years = useCountUp(15)
+
+  return (
+    <section
+      id="about"
+      className="py-20 sm:py-28 md:py-36 border-t border-[#1a1a1a]"
+    >
+      <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-20 xl:gap-28 items-center">
+          
+          {/* TEXT */}
+          <div className="md:col-span-7">
+            <div className="mb-10">
+              <div className="text-xs tracking-[0.3em] text-[#888] mb-4">
+                ESTABLISHED 2009
+              </div>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight">
+                Execution<br />Discipline
+              </h2>
+            </div>
+
+            <div className="space-y-6 text-[#a8a8a8] text-base sm:text-lg leading-[1.8] font-light">
+              <p>
+                LUXORA operates as an integrated interior architecture and fit-out
+                studio, delivering turnkey solutions for high-value institutional
+                environments across the UAE.
+              </p>
+              <p>
+                Our practice synthesizes architectural design, regulatory
+                coordination, engineering integration, and construction oversight
+                within a unified governance framework.
+              </p>
+              <p>
+                With fifteen years of regional execution, we specialize in complex
+                projects requiring authority approvals, stakeholder alignment, and
+                operational continuity during delivery.
+              </p>
+            </div>
+
+            {/* METRICS */}
+            <div
+              ref={projects.ref}
+              className="mt-14 pt-14 border-t border-[#1a1a1a]"
+            >
+              <div className="grid grid-cols-2 gap-8 sm:gap-10">
+                <Metric value={`${projects.value}+`} label="INSTITUTIONAL PROJECTS" />
+                <Metric value={years.value} label="YEARS REGIONAL PRACTICE" />
+                <Metric value="100%" label="AUTHORITY COMPLIANCE" />
+                <Metric value="UAE" label="LICENSED & INSURED" />
+              </div>
+            </div>
+          </div>
+
+          {/* IMAGE */}
+          <div className="md:col-span-5">
+            <div className="relative aspect-[4/5] md:aspect-auto md:h-[680px] overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop"
+                alt="Studio execution and leadership"
+                fill
+                className="object-cover"
+                priority={false}
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ---------- Metric Component ---------- */
+function Metric({ value, label }) {
+  return (
+    <div>
+      <div className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#d4af37] mb-2">
+        {value}
+      </div>
+      <div className="text-xs sm:text-sm tracking-wider text-[#888]">
+        {label}
+      </div>
+    </div>
+  )
+}
