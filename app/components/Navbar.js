@@ -19,9 +19,9 @@ export default function Navbar() {
     const navItems = [
         { href: "/", icon: Home, label: "HOME" },                 
         { href: "/about", icon: LayoutGrid, label: "ABOUT US" }, 
-        { href: "/services", icon: Ruler, label: "SPECIALIZATIONS" }, 
+        { href: "/services", icon: Ruler, label: "SERVICES" }, 
         { href: "/portfolio", icon: FolderOpen, label: "PORTFOLIO" }, 
-        { href: "#contact", icon: Mail, label: "ENQUIRE" },      
+        { href: "/contact", icon: Mail, label: "ENQUIRE" },      
     ];
 
 
@@ -43,7 +43,7 @@ export default function Navbar() {
                     <div className="hidden md:flex items-center gap-10 lg:gap-16 text-xs tracking-[0.25em]">
                         <Link href="/" className="hover:text-[#d4af37]">HOME</Link>
                         <Link href="/about" className="hover:text-[#d4af37]">ABOUT US</Link>
-                        <Link href="/services" className="hover:text-[#d4af37]">SPECIALIZATIONS</Link>
+                        <Link href="/services" className="hover:text-[#d4af37]">SERVICES</Link>
                         <Link href="/portfolio" className="hover:text-[#d4af37]">PORTFOLIO</Link>
                         <Link href="/contact" className="hover:text-[#d4af37]">ENQUIRE</Link>
                     </div>

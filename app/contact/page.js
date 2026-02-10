@@ -36,15 +36,16 @@ export default function ContactPage() {
             <div className="relative pl-8 border-l border-[#2d2d2d]">
               <div className="absolute -left-[1px] top-0 h-10 w-[2px] bg-[#d4af37]" />
               <p className="text-sm text-[#8a8a8a] mb-2">
-                Minimum project engagement
+                Exclusive Project Engagement
               </p>
               <p className="text-xl text-[#d4af37] tracking-wide">
-                AED 2,500,000
+                By Invitation Only
               </p>
               <p className="text-xs text-[#6f6f6f] mt-4">
-                Enquiries are evaluated based on scope alignment.
+                Enquiries are carefully reviewed to ensure alignment with our design standards.
               </p>
             </div>
+
           </div>
 
           {/* FORM */}
@@ -63,8 +64,8 @@ export default function ContactPage() {
               <Field label="EMAIL ADDRESS *">
                 <input type="email" className="lux-input" required />
               </Field>
-              <Field label="TELEPHONE *">
-                <input type="tel" className="lux-input" required />
+              <Field label="CONTACT NUMBER*">
+                <input type="numbers" className="lux-input" required />
               </Field>
             </div>
 
@@ -76,16 +77,6 @@ export default function ContactPage() {
                 <option>Institutional</option>
                 <option>Hospitality & Dining</option>
                 <option>Mixed-Use / Other</option>
-              </select>
-            </Field>
-
-            <Field label="ESTIMATED PROJECT BUDGET (AED) *">
-              <select className="lux-select" required>
-                <option value="">Select budget range</option>
-                <option>AED 2.5M – 5M</option>
-                <option>AED 5M – 10M</option>
-                <option>AED 10M – 20M</option>
-                <option>AED 20M+</option>
               </select>
             </Field>
 

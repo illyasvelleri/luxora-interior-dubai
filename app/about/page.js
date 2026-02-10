@@ -148,7 +148,7 @@ export default function ContactPage() {
                     </p>
 
                     <Link
-                        href="/#contact"
+                        href="/contact"
                         className="inline-block px-16 py-5 border border-[#d4af37]/60 text-[#d4af37] tracking-[0.3em] text-xs hover:bg-[#d4af37]/10 transition-all duration-700"
                     >
                         REQUEST CONSULTATION
