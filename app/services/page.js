@@ -73,6 +73,94 @@ export default function ServicesPage() {
               "Final documentation & asset handover"
             ]}
           />
+
+          {/*newly added*/}
+
+          {/* SERVICE BLOCK */}
+          <Service
+            title="Interior Design Consultancy"
+            description="Refined interior environments shaped through disciplined spatial planning, material intelligence, and contextual sensitivity. Our consultancy model blends aesthetic clarity with technical precision to ensure longevity and architectural coherence."
+            bullets={[
+              "Bespoke residential & commercial interior design",
+              "Concept creation & intelligent space planning",
+              "Advanced 3D visualization & immersive presentations",
+              "Curated material, lighting & color strategy",
+              "Technical detailing & construction documentation"
+            ]}
+          />
+
+          <Service
+            title="Turnkey Design & Build Solutions"
+            description="Integrated design-to-delivery model structured for execution certainty. Luxora manages the complete lifecycle — from authority approvals to final commissioning — under one accountable framework."
+            bullets={[
+              "Complete design & build execution",
+              "Authority approvals & regulatory coordination",
+              "Dedicated institutional-grade project management",
+              "Budget discipline & procurement control",
+              "Testing, commissioning & structured handover"
+            ]}
+          />
+
+          <Service
+            title="Residential & Commercial Interior Architecture"
+            description="Spatial environments tailored to brand identity, lifestyle narrative, and operational performance. Each project is structured around functional logic and material integrity."
+            bullets={[
+              "Luxury villas & high-end apartments",
+              "Corporate offices & executive workspaces",
+              "Retail boutiques & premium showrooms",
+              "Restaurants, cafés & healthcare interiors",
+              "Renovation & bespoke refurbishments"
+            ]}
+          />
+
+          <Service
+            title="Custom Joinery & Bespoke Furniture"
+            description="Precision-engineered joinery and custom furniture crafted to elevate architectural intent. Our fabrication approach integrates craftsmanship with production discipline."
+            bullets={[
+              "Tailor-made furniture & built-in systems",
+              "Designer modular kitchens & wardrobes",
+              "Statement reception counters & feature installations",
+              "Premium woodwork, veneers & upholstery",
+              "Custom architectural millwork packages"
+            ]}
+          />
+
+          <Service
+            title="Ceilings, Partitions & Finishing Works"
+            description="Architectural finishing systems executed with detailing precision. Surface articulation, material alignment, and system coordination are handled within controlled site protocols."
+            bullets={[
+              "Luxury gypsum & designer false ceilings",
+              "Glass & aluminum partition systems",
+              "High-end wall finishes & textured surfaces",
+              "Marble, porcelain, vinyl & timber flooring",
+              "Bespoke curtains, blinds & soft furnishings"
+            ]}
+          />
+
+          <Service
+            title="Architectural Cladding & Surface Applications"
+            description="Structural enhancement through high-performance cladding solutions designed to elevate both aesthetic presence and functional durability."
+            bullets={[
+              "Elevator cabin enhancements & refinements",
+              "Elevator & escalator cladding systems",
+              "Glass & metal architectural cladding",
+              "Decorative & custom surface applications",
+              "Integrated façade-level detailing"
+            ]}
+          />
+
+          <Service
+            title="Indoor & Outdoor Event Environments"
+            description="Temporary and semi-permanent spatial installations engineered for impact, brand immersion, and experiential depth."
+            bullets={[
+              "Luxury exhibition stands & installations",
+              "Corporate event environments",
+              "Wedding & stage design concepts",
+              "Bespoke themed & outdoor event structures",
+              "Modular structural & lighting integration"
+            ]}
+          />
+
         </div>
       </div>
 

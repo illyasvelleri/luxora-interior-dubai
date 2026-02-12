@@ -1,5 +1,11 @@
-"use client";
 import Link from "next/link";
+
+export const metadata = {
+  title: "Luxury Interior Design & Fit-Out Company in Dubai | Luxora Design & Fitout",
+  description:
+    "Luxora Design & Fitout is a Dubai-based luxury interior design and turnkey fit-out company specializing in residential, commercial, retail, and hospitality interiors across the UAE.",
+};
+
 export default function ContactPage() {
     return (
         <div>
@@ -11,14 +17,15 @@ export default function ContactPage() {
                     </div>
 
                     <h1 className="font-serif text-6xl md:text-8xl leading-[0.95] tracking-tight mb-10">
-                        Institutional Architecture<br />Executed with Precision
+                        Luxury Interior Design &<br />Turnkey Fit-Out in Dubai
                     </h1>
 
                     <p className="text-[#a8a8a8] text-lg max-w-3xl leading-relaxed">
-                        LUXORA is a UAE-based interior architecture and fit-out consultancy
-                        specializing in high-complexity institutional, commercial, and sacred
-                        environments. Our work operates at the intersection of architectural
-                        rigor, operational performance, and long-term asset value.
+                        Luxora Design & Fitout is a Dubai-based luxury interior design and
+                        turnkey fit-out company delivering refined residential, commercial,
+                        retail, and hospitality environments across the UAE. We combine
+                        architectural discipline, premium material selection, and structured
+                        project execution to transform vision into exceptional built reality.
                     </p>
                 </div>
             </section>
@@ -28,29 +35,31 @@ export default function ContactPage() {
                 <div className="max-w-[1400px] mx-auto px-8 lg:px-20 grid md:grid-cols-12 gap-16">
                     <div className="md:col-span-5">
                         <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-                            A Practice Built<br />for Institutions
+                            A Premium Interior Design<br />Studio in the UAE
                         </h2>
                     </div>
 
                     <div className="md:col-span-7 text-[#a8a8a8] text-lg leading-[1.9] space-y-6">
                         <p>
-                            LUXORA was established to serve organizations that require more than
-                            aesthetic interiors. Our clients operate airports, government
-                            facilities, religious institutions, educational campuses, and
-                            large-scale commercial environments where performance, compliance, and
-                            durability are critical.
+                            Established with a commitment to excellence, Luxora Design & Fitout
+                            specializes in high-end interior design and complete fit-out
+                            solutions in Dubai and across the United Arab Emirates. Our
+                            portfolio includes luxury villas, executive offices, retail
+                            boutiques, restaurants, cafés, and bespoke commercial interiors.
                         </p>
 
                         <p>
-                            We do not operate as a volume-driven studio. Each commission is
-                            undertaken with direct senior oversight, ensuring design intent is
-                            preserved from concept through execution.
+                            We are not a volume-driven contractor. Every project is handled
+                            with direct senior oversight, ensuring precision in design
+                            development, regulatory coordination, and construction delivery.
+                            Our approach balances aesthetic sophistication with operational
+                            performance and long-term durability.
                         </p>
                     </div>
                 </div>
             </section>
-            {/*WHAT LUXORA DOES (SEO GOLD)*/}
 
+            {/*WHAT LUXORA DOES*/}
             <section className="py-32 bg-[#0a0a0a]">
                 <div className="max-w-[1400px] mx-auto px-8 lg:px-20">
                     <h2 className="font-serif text-4xl md:text-5xl mb-16">
@@ -59,66 +68,69 @@ export default function ContactPage() {
 
                     <div className="grid md:grid-cols-2 gap-16 text-[#a8a8a8] text-lg leading-relaxed">
                         <ul className="space-y-4">
-                            <li>• Institutional Interior Architecture</li>
-                            <li>• Airport & Aviation Facility Interiors</li>
-                            <li>• Government & Civic Buildings</li>
-                            <li>• Sacred Architecture & Religious Facilities</li>
-                            <li>• Educational & Campus Environments</li>
+                            <li>• Luxury Residential Interior Design in Dubai</li>
+                            <li>• Corporate & Executive Office Fit-Out</li>
+                            <li>• Retail & Premium Showroom Interiors</li>
+                            <li>• Hospitality, Restaurant & Café Design</li>
+                            <li>• Villa Renovations & Bespoke Refurbishments</li>
                         </ul>
 
                         <ul className="space-y-4">
-                            <li>• Authority Approvals & Compliance</li>
-                            <li>• MEP & Systems Coordination</li>
-                            <li>• Wayfinding & Passenger Flow Strategy</li>
-                            <li>• Phased & Occupied Site Delivery</li>
-                            <li>• Turnkey Interior Fit-Out</li>
+                            <li>• Turnkey Design & Build Solutions</li>
+                            <li>• Authority Approvals & Regulatory Coordination (UAE)</li>
+                            <li>• Custom Joinery & Bespoke Furniture Manufacturing</li>
+                            <li>• Ceiling, Partition & Architectural Finishes</li>
+                            <li>• Project Management & Quality Supervision</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            {/*WHY INSTITUTIONS CHOOSE LUXORA*/}
+            {/*WHY CLIENTS CHOOSE LUXORA*/}
             <section className="py-32 border-t border-[#1a1a1a]">
                 <div className="max-w-[1400px] mx-auto px-8 lg:px-20">
                     <h2 className="font-serif text-4xl md:text-5xl mb-20">
-                        Why Institutions Choose LUXORA
+                        Why Clients Choose Luxora
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-16 text-[#a8a8a8]">
                         <div>
                             <h3 className="text-[#d4af37] mb-4 tracking-wide">
-                                Operational Intelligence
+                                Design Intelligence
                             </h3>
                             <p>
-                                Our designs are informed by real-world operational constraints,
-                                security protocols, passenger flows, and maintenance realities.
+                                Every project begins with strategic spatial planning,
+                                ensuring form, function, lighting, and materiality are
+                                aligned to deliver refined yet practical interiors.
                             </p>
                         </div>
 
                         <div>
                             <h3 className="text-[#d4af37] mb-4 tracking-wide">
-                                Authority-Led Experience
+                                Execution Precision
                             </h3>
                             <p>
-                                We navigate UAE authority requirements efficiently, reducing approval
-                                risk and delivery delays.
+                                From Dubai authority approvals to final detailing,
+                                we implement structured coordination, disciplined
+                                timelines, and uncompromising quality control.
                             </p>
                         </div>
 
                         <div>
                             <h3 className="text-[#d4af37] mb-4 tracking-wide">
-                                Senior Accountability
+                                Long-Term Value
                             </h3>
                             <p>
-                                Every project receives direct leadership involvement — not delegated
-                                production teams.
+                                Our interiors are engineered for durability,
+                                maintainability, and lasting visual impact —
+                                protecting both investment and brand identity.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/*PROCESS (CRITICAL FOR TRUST)*/}
+            {/*PROCESS*/}
             <section className="py-32 bg-[#0b0b0b]">
                 <div className="max-w-[1400px] mx-auto px-8 lg:px-20">
                     <h2 className="font-serif text-4xl md:text-5xl mb-16">
@@ -126,25 +138,26 @@ export default function ContactPage() {
                     </h2>
 
                     <ol className="space-y-6 text-[#a8a8a8] text-lg leading-relaxed">
-                        <li>1. Strategic Briefing & Feasibility Analysis</li>
-                        <li>2. Concept Architecture & Spatial Planning</li>
-                        <li>3. Authority Coordination & Technical Design</li>
-                        <li>4. Detailed Fit-Out Documentation</li>
-                        <li>5. Execution Oversight & Quality Control</li>
+                        <li>1. Strategic Consultation & Feasibility Assessment</li>
+                        <li>2. Concept Interior Design & 3D Visualization</li>
+                        <li>3. Technical Drawings & Authority Approvals</li>
+                        <li>4. Turnkey Fit-Out Execution & Site Supervision</li>
+                        <li>5. Quality Control, Testing & Final Handover</li>
                     </ol>
                 </div>
             </section>
 
-            {/*FINAL CTA (DO NOT SKIP)*/}
+            {/*FINAL CTA*/}
             <section className="py-40 border-t border-[#1a1a1a] text-center">
                 <div className="max-w-[900px] mx-auto px-8">
                     <h2 className="font-serif text-4xl md:text-6xl mb-10">
-                        Engage LUXORA
+                        Start Your Interior Project in Dubai
                     </h2>
 
                     <p className="text-[#a8a8a8] text-lg mb-16 leading-relaxed">
-                        We invite enquiries from institutions and organizations seeking permanent,
-                        performance-driven architectural solutions across the United Arab Emirates.
+                        We welcome enquiries from clients seeking luxury interior
+                        design and turnkey fit-out solutions in Dubai and across
+                        the UAE — delivered with precision, discipline, and distinction.
                     </p>
 
                     <Link
@@ -155,7 +168,6 @@ export default function ContactPage() {
                     </Link>
                 </div>
             </section>
-
         </div>
     )
 }
