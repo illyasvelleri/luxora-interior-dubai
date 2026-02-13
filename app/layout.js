@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import LoadingAnimation from "./components/Loadinganimation";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -43,6 +44,8 @@ export default function RootLayout({ children }) {
           text-[#e8e8e8]
         `}
       >
+        {/* Loading Animation - will show on initial page load */}
+        <LoadingAnimation />
         <Navbar />
         {children}
         <Footer />

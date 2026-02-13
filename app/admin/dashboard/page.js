@@ -1,11 +1,12 @@
 import connectDB from "@/lib/db";
 import Project from "@/models/Project";
 import Link from "next/link";
-import { 
-  LayoutGrid, 
-  Plus, 
-  TrendingUp, 
-  Calendar, 
+import {
+  LayoutGrid,
+  Plus,
+  Pen,
+  TrendingUp,
+  Calendar,
   Eye,
   Image as ImageIcon,
   Clock,
@@ -15,16 +16,16 @@ import {
 
 export default async function AdminDashboard() {
   await connectDB();
-  
+
   const projects = await Project.find().sort({ createdAt: -1 }).lean();
   const recentProjects = projects.slice(0, 6);
-  
+
   // Calculate stats
   const totalProjects = projects.length;
   const currentYear = new Date().getFullYear();
   const thisYearProjects = projects.filter(p => p.year === currentYear.toString()).length;
   const totalImages = projects.reduce((sum, p) => sum + (p.gallery?.length || 0), 0);
-  
+
   // Get categories count
   const categories = {};
   projects.forEach(p => {
@@ -36,7 +37,7 @@ export default async function AdminDashboard() {
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white p-4 sm:p-6 lg:p-10 pt-20 sm:pt-24">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Header */}
         <div className="mb-8 lg:mb-12">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif mb-2">
@@ -49,7 +50,7 @@ export default async function AdminDashboard() {
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-8 lg:mb-12">
-          
+
           {/* Total Projects */}
           <div className="bg-gradient-to-br from-[#1a1a1a] to-[#121212] border border-[#222] rounded-lg p-6 hover:border-[#d4af37] transition-all group">
             <div className="flex items-start justify-between mb-4">
@@ -109,7 +110,7 @@ export default async function AdminDashboard() {
 
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-          
+
           {/* Recent Projects */}
           <div className="lg:col-span-2 bg-[#121212] border border-[#222] rounded-lg p-6 lg:p-8">
             <div className="flex items-center justify-between mb-6">
@@ -183,7 +184,7 @@ export default async function AdminDashboard() {
 
           {/* Quick Actions & Categories */}
           <div className="space-y-6">
-            
+
             {/* Quick Actions */}
             <div className="bg-[#121212] border border-[#222] rounded-lg p-6">
               <h2 className="text-xl font-serif mb-6">Quick Actions</h2>
@@ -201,6 +202,13 @@ export default async function AdminDashboard() {
                 >
                   <LayoutGrid className="w-5 h-5 text-[#d4af37]" />
                   <span className="font-medium text-white">Manage Projects</span>
+                </Link>
+                <Link
+                  href="/admin/testimonials"
+                  className="flex items-center gap-3 p-4 bg-[#1a1a1a] rounded-lg hover:bg-[#222] transition-all group"
+                >
+                  <Pen className="w-5 h-5 text-[#d4af37]" />
+                  <span className="font-medium text-white">Manage Testimonials</span>
                 </Link>
               </div>
             </div>

@@ -102,7 +102,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Home, LayoutGrid, LogOut, Menu, X, Plus } from "lucide-react";
+import { Home, LayoutGrid, LogOut, Menu, X, Plus, Pen } from "lucide-react";
 import { useRouter, usePathname } from "next/navigation";
 
 export default function AdminNavbar() {
@@ -114,6 +114,7 @@ export default function AdminNavbar() {
     { href: "/admin/dashboard", icon: Home, label: "DASHBOARD" },
     { href: "/admin/projects", icon: LayoutGrid, label: "PROJECTS" },
     { href: "/admin/new-project", icon: Plus, label: "NEW PROJECT" },
+    { href: "/admin/testimonials", icon: Pen, label: "TESTIMONIALS" },
   ];
 
   const handleLogout = async () => {
@@ -143,7 +144,7 @@ export default function AdminNavbar() {
 
       {/* Navbar */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-[#0d0d0d]/95 backdrop-blur-md border-b border-[#222]">
-        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-10 py-4 flex justify-between items-center">
+        <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-10 py-6 flex justify-between items-center">
           <Link href="/admin/dashboard" className="text-white font-bold text-lg tracking-widest">
             LUXORA <span className="text-[#d4af37] font-light ml-2">ADMIN</span>
           </Link>
@@ -187,7 +188,7 @@ export default function AdminNavbar() {
 
       {/* Mobile sidebar */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-72 bg-[#0d0d0d] border-l border-[#222] shadow-2xl transform transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 right-0 z-50 w-72  bg-[#0d0d0d] border-l border-[#222] shadow-2xl transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

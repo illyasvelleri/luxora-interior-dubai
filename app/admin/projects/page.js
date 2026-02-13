@@ -1,56 +1,8 @@
-// import connectDB from "@/lib/db";
-// import Project from "@/models/Project";
-// import DeleteButton from "./DeleteButton";
-
-// export default async function AdminProjectsPage() {
-//   await connectDB();
-//   const projects = await Project.find().sort({ createdAt: -1 }).lean();
-
-//   return (
-//     <div className="p-8 bg-black min-h-screen text-white">
-//       <h1 className="text-3xl mb-8 font-serif">Manage Projects</h1>
-
-//       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-//         {projects.map((project) => (
-//           <div
-//             key={project._id}
-//             className="bg-[#121212] border border-[#222] rounded-lg overflow-hidden"
-//           >
-//             <img
-//               src={project.image?.url}
-//               alt={project.title}
-//               className="h-48 w-full object-cover"
-//             />
-
-//             <div className="p-4 space-y-2">
-//               <h2 className="text-lg font-semibold">
-//                 {project.title}
-//               </h2>
-
-//               <p className="text-sm text-gray-400">
-//                 {project.category} • {project.year}
-//               </p>
-
-//               <div className="flex justify-between pt-4">
-//                 <a
-//                   href={`/admin/projects/${project._id}`}
-//                   className="text-sm text-blue-400 hover:underline"
-//                 >
-//                   View
-//                 </a>
-
-//                 <DeleteButton id={project._id.toString()} />
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
 import connectDB from "@/lib/db";
 import Project from "@/models/Project";
 import DeleteButton from "./DeleteButton";
+import FeaturedToggleButton from "./FeaturedToggleButton";
+
 import { Plus, Search, Filter, Grid3x3, List, Calendar, Tag } from "lucide-react";
 import Link from "next/link";
 
@@ -61,7 +13,7 @@ export default async function AdminProjectsPage() {
   return (
     <div className="min-h-screen bg-[#0d0d0d] text-white p-4 sm:p-6 lg:p-10 pt-20 sm:pt-24">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Header Section */}
         <div className="mb-8 lg:mb-12">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 mb-6">
@@ -73,7 +25,7 @@ export default async function AdminProjectsPage() {
                 {projects.length} project{projects.length !== 1 ? 's' : ''} in portfolio
               </p>
             </div>
-            
+
             <Link
               href="/admin/projects/new"
               className="inline-flex items-center justify-center gap-2 bg-[#d4af37] text-black px-6 py-3 rounded font-medium hover:bg-[#c19d2f] transition-colors"
@@ -123,7 +75,14 @@ export default async function AdminProjectsPage() {
                       <Grid3x3 className="w-12 h-12 text-[#333]" />
                     </div>
                   )}
-                  
+
+
+                  <FeaturedToggleButton
+                    id={project._id.toString()}
+                    isFeatured={project.isFeatured}
+                  />
+
+
                   {/* Overlay Badge */}
                   <div className="absolute top-3 right-3 bg-black/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium">
                     {project.heightClass === 'row-span-3' ? 'XL' : project.heightClass === 'row-span-2' ? 'L' : 'M'}

@@ -5,6 +5,7 @@ import SelectedWorks from "./components/SelectedWorks"
 import Specializations from "./components/Specializations"
 import Methodology from "./components/Methodology"
 import Philosophy from "./components/Philosophy"
+import TestimonialSection from "./components/TestimonialSection"
 import ContactForm from "./components/ContactForm"
 import Subscription from "./components/Subscription"
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Specializations />
       <Methodology />
       <Philosophy />
+      <TestimonialSection />
       <ContactForm />
       <Subscription />
     </main>

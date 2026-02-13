@@ -207,7 +207,7 @@ export default function About() {
           <div className="md:col-span-5 flex justify-center md:justify-end">
             <div className="relative w-full max-w-[450px] aspect-[3/4] overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1600&auto=format&fit=crop"
+                src="/kitchen-view.jpg"
                 alt="Luxury interior fit-out project in UAE"
                 fill
                 sizes="(max-width: 768px) 100vw, 450px"
