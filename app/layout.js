@@ -46,6 +46,7 @@ export default function RootLayout({ children }) {
       >
         {/* Loading Animation - will show on initial page load */}
         <LoadingAnimation />
+
         <Navbar />
         {children}
         <Footer />
