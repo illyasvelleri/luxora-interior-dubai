@@ -70,11 +70,10 @@ export default function ContactPage() {
             <Field label="PROJECT TYPOLOGY *">
               <select className="lux-select" required>
                 <option value="">Select project type</option>
-                <option>Commercial Infrastructure</option>
-                <option>Sacred Architecture</option>
-                <option>Institutional</option>
-                <option>Hospitality & Dining</option>
-                <option>Mixed-Use / Other</option>
+                <option>Hospitality Projects</option>
+                <option>Commercial Spaces</option>
+                <option>Residential Interiors</option>
+                <option>Exhibition & Events</option>
               </select>
             </Field>
 

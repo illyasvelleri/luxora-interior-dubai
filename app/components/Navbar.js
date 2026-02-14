@@ -153,7 +153,7 @@ export default function Navbar() {
                 <div className="max-w-[1800px] mx-auto px-6 sm:px-8 lg:px-20 py-6 sm:py-8 flex items-center justify-between">
 
                     {/* Logo with tagline */}
-                    <Link href="/" className="flex flex-col items-start">
+                    {/* <Link href="/" className="flex flex-col items-start">
                         <div className="flex items-baseline">
                             <span className="text-lg sm:text-xl tracking-[0.15em] font-bold text-[#d4af37]">
                                 LUX
@@ -163,6 +163,21 @@ export default function Navbar() {
                             </span>
                         </div>
                         <span className="text-[10px] sm:text-xs tracking-[0.35em] text-white/80 font-light mt-1.5">
+                            DESIGN AND FITOUT
+                        </span>
+                    </Link> */}
+
+                    {/* Logo with tagline – tagline never wider than logo */}
+                    <Link href="/" className="flex flex-col items-center">
+                        <div className="flex items-baseline">
+                            <span className="text-2xl tracking-[0.14em] font-bold text-[#d4af37]">
+                                LUX
+                            </span>
+                            <span className="text-2xl tracking-[0.14em] font-bold text-white">
+                                ORA
+                            </span>
+                        </div>
+                        <span className="text-[9.5px] sm:text-[10px] tracking-[0.14em] text-white/80 font-light mt-1.5 leading-none whitespace-nowrap">
                             DESIGN AND FITOUT
                         </span>
                     </Link>
