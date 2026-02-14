@@ -157,8 +157,8 @@ import Image from "next/image"
 import CountUpNumber from "./CountUpNumber"
 
 export default function About() {
-  const projects = 120
-  const startYear = 2025
+  const projects = 30
+  const startYear = 2024
   const currentYear = new Date().getFullYear()
   const years = currentYear - startYear
 
@@ -172,33 +172,39 @@ export default function About() {
 
           {/* TEXT */}
           <div className="md:col-span-7">
-            <header className="mb-10">
-              <p className="text-xs tracking-[0.3em] text-[#888] mb-4">
-                LUXORA DESIGN & FITOUT
-              </p>
+            <header className="mb-12 md:mb-16 lg:mb-20">
+              <div className="relative pl-8 md:pl-10 lg:pl-12 border-l border-[#1f1f1f]">
+                {/* Gold accent vertical line */}
+                <div className="absolute -left-[1px] top-0 h-12 md:h-14 lg:h-16 w-[2px] bg-[#d4af37]" />
 
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight">
-                Refined Design<br />Executed with Precision
-              </h2>
+                {/* Content */}
+                <div className="relative">
+                  {/* Small uppercase label */}
+                  <p className="text-xs md:text-sm tracking-[0.35em] text-[#888888] uppercase mb-5 md:mb-6 lg:mb-8 font-light">
+                    LUXORA DESIGN & FITOUT
+                  </p>
+
+                  {/* Main headline */}
+                  <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.95] md:leading-[0.92] tracking-[-0.015em] text-[#f5f5f5]">
+                    Refined Design
+                    <br className="sm:hidden" />
+                    Executed with Precision
+                  </h2>
+                </div>
+              </div>
             </header>
 
             <div className="space-y-6 text-[#a8a8a8] text-base sm:text-lg leading-[1.8] font-light">
               <p>
-                Luxora Design & Fitout is a premier interior design and turnkey
-                fit-out company delivering refined residential, commercial, and
-                hospitality environments across the United Arab Emirates.
+                Luxora Design & Fitout is a luxury interior architecture and turnkey fit-out company delivering high-end residential, commercial, and hospitality environments across the United Arab Emirates.
               </p>
 
               <p>
-                We combine architectural discipline, curated material selection,
-                and technical coordination to create spaces that balance elegance,
-                functionality, and long-term performance.
+                We integrate architectural expertise, curated material selection, and meticulous technical coordination to craft spaces that embody elegance, functionality, and enduring performance.
               </p>
 
               <p>
-                From concept development and 3D visualization to authority approvals
-                and final handover, our integrated team ensures seamless execution
-                defined by craftsmanship, precision, and distinction.
+                From concept design and advanced 3D visualization to authority approvals, detailed engineering, and final handover, our fully integrated team ensures seamless execution defined by craftsmanship, precision, and uncompromising quality.
               </p>
             </div>
           </div>
@@ -244,11 +250,10 @@ function Metric({ value, label, size }) {
   return (
     <div className="flex flex-col items-center">
       <div
-        className={`font-serif text-[#d4af37] mb-2 ${
-          size === "lg"
-            ? "text-5xl sm:text-6xl md:text-7xl xl:text-8xl"
-            : "text-3xl sm:text-4xl md:text-5xl"
-        }`}
+        className={`font-serif text-[#d4af37] mb-2 ${size === "lg"
+          ? "text-5xl sm:text-6xl md:text-7xl xl:text-8xl"
+          : "text-3xl sm:text-4xl md:text-5xl"
+          }`}
       >
         {value}
       </div>

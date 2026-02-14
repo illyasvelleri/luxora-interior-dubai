@@ -33,8 +33,13 @@ export default function Footer() {
                             </div>
 
                             <div className="flex items-center gap-3">
+                                <Phone size={16} className="text-[#d4af37]" />
+                                <span>+971 55 431 4696</span>
+                            </div>
+
+                            <div className="flex items-center gap-3">
                                 <Mail size={16} className="text-[#d4af37]" />
-                                <span>marsookh@luxorafitout.ae</span>
+                                <span>Info@luxorafitout.ae</span>
                             </div>
 
                             <div className="flex items-center gap-3">

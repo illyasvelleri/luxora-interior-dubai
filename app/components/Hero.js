@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      
+
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -25,19 +25,18 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-[1500px] mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <h1 className="font-serif text-[clamp(2.8rem,6vw,6.5rem)] leading-[0.95] tracking-tight text-[#f5f5f5] mb-8">
-          Architecture<br />for Institutions
+          Luxury Interior<br />Design and Fit-out
         </h1>
 
         <p className="text-sm sm:text-base md:text-lg text-[#b8b8b8] max-w-2xl mx-auto mb-14 leading-relaxed tracking-wide">
-          Interior architecture and execution for aviation, institutional,
-          sacred, and commercial environments across the United Arab Emirates.
+          Interior Architecture and Turnkey Execution for High-End Commercial and Residential Spaces Across the United Arab Emirates.
         </p>
 
         <Link
           href="/contact"
           className="inline-flex items-center px-14 py-5 border border-[#d4af37]/60 text-[#d4af37] text-xs tracking-[0.35em] hover:bg-[#d4af37]/10 transition-all duration-700"
         >
-          REQUEST CONSULTATION
+          REQUEST QUOTATION
         </Link>
       </div>
     </section>

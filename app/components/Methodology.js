@@ -6,40 +6,69 @@ export default function Methodology() {
     return (
         <section className="py-20 sm:py-28 md:py-40">
             <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-20">
-                <div className="mb-20 sm:mb-24 md:mb-32">
-                    <div className="text-xs tracking-[0.3em] text-[#888] mb-4 sm:mb-6">PROCESS</div>
-                    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight mb-6 sm:mb-8">Execution Framework</h2>
-                    <p className="text-[#a8a8a8] text-base sm:text-lg max-w-3xl leading-relaxed">
-                        Every project follows a disciplined methodology integrating design, regulatory compliance, stakeholder coordination, and construction oversight.
-                    </p>
+                <div className="mb-20 sm:mb-24 md:mb-32 lg:mb-40 relative pl-8 md:pl-10 lg:pl-12 border-l border-[#1f1f1f]">
+                    {/* Golden vertical accent line */}
+                    <div className="absolute -left-[1px] top-0 h-14 md:h-16 lg:h-20 w-[2px] bg-[#d4af37]" />
+
+                    <div className="relative">
+                        {/* Optional small label (uncomment if you want it back) */}
+                        {/* <p className="text-xs md:text-sm tracking-[0.35em] text-[#888888] uppercase mb-5 md:mb-6 font-light">
+      Execution Framework
+    </p> */}
+
+                        {/* Main heading with better responsive sizing & tight tracking */}
+                        <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.92] tracking-[-0.01em] text-[#f5f5f5] mb-6 sm:mb-8 md:mb-10">
+                            OUR PROCESS
+                        </h2>
+
+                        {/* Optional description (uncomment if you want to bring it back) */}
+                        {/* <p className="text-[#a8a8a8] text-base sm:text-lg md:text-xl max-w-3xl lg:max-w-4xl leading-relaxed">
+      Every project follows a disciplined methodology integrating design, regulatory compliance, stakeholder coordination, and construction oversight.
+    </p> */}
+                    </div>
                 </div>
 
                 <div className="space-y-0">
                     {[
                         {
                             number: "01",
-                            title: "Institutional Analysis & Brief Refinement",
-                            desc: "Organizational study, stakeholder interviews, operational workflow mapping, spatial programming, and project charter development."
+                            title: "Initial Consultation & Brief Development",
+                            desc: "We begin by understanding the client’s vision, functional requirements, budget parameters, and project objectives. This stage establishes the foundation for a strategically aligned design approach."
                         },
                         {
                             number: "02",
-                            title: "Conceptual Design & Authority Coordination",
-                            desc: "Spatial strategies, material frameworks, preliminary authority submissions, fire life safety planning, and stakeholder alignment workshops."
+                            title: "Concept Design",
+                            desc: "Our team develops space planning, mood boards, material palettes, and conceptual layouts that translate the brief into a refined architectural vision."
                         },
                         {
                             number: "03",
-                            title: "Detailed Design & Technical Integration",
-                            desc: "Construction documentation, MEP coordination, material specifications, custom millwork design, authority approvals, and tender preparation."
+                            title: "3D Visualization & Design Development",
+                            desc: "Detailed 3D renderings and technical drawings are prepared to finalize aesthetics, materials, and spatial coordination, ensuring clarity before execution."
                         },
                         {
                             number: "04",
-                            title: "Construction Administration & QA/QC",
-                            desc: "On-site supervision, contractor coordination, material inspections, progress reporting, change order management, and defect resolution."
+                            title: "Authority Approvals & Technical Coordination",
+                            desc: "We manage all required authority submissions and approvals while coordinating MEP, structural, and specialist requirements to ensure compliance and smooth project progression."
                         },
                         {
                             number: "05",
-                            title: "Commissioning & Post-Occupancy Support",
-                            desc: "Systems testing, staff training, O&M documentation, defects liability management, and long-term maintenance planning."
+                            title: "Detailed Engineering & Procurement",
+                            desc: "Comprehensive shop drawings are produced, materials are finalized, and procurement planning is executed to maintain quality, timeline, and cost control."
+                        },
+                        {
+                            number: "06",
+                            title: "Fit-Out Execution",
+                            desc: "Our site team oversees construction, installation, and finishing works with strict quality control and safety standards, ensuring precision at every stage."
+                        },
+                        {
+                            number: "07",
+                            title: "Quality Assurance & Handover",
+                            desc: "Final inspections, snag rectification, and testing are conducted before formal handover, delivering a fully completed and performance-ready environment."
+                        },
+                        {
+                            number: "08",
+                            title: "Post-Handover Support",
+                            desc: "We remain available for maintenance coordination and ongoing support, ensuring long-term client satisfaction."
                         }
                     ].map((step, index) => (
                         <div

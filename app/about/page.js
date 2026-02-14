@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Luxury Interior Design & Fit-Out Company in Dubai | Luxora Design & Fitout",
-  description:
-    "Luxora Design & Fitout is a Dubai-based luxury interior design and turnkey fit-out company specializing in residential, commercial, retail, and hospitality interiors across the UAE.",
+    title: "Luxury Interior Design & Fit-Out Company in UAE | Luxora Design & Fitout",
+    description:
+        "Luxora Design & Fitout is a Dubai-based luxury interior design and turnkey fit-out company specializing in residential, commercial, retail, and hospitality interiors across the UAE.",
 };
 
 export default function ContactPage() {
@@ -11,22 +11,27 @@ export default function ContactPage() {
         <div>
             {/*HERO / AUTHORITY STATEMENT*/}
             <section className="pt-40 pb-28 bg-[#0b0b0b]">
-                <div className="max-w-[1500px] mx-auto px-8 lg:px-20">
-                    <div className="text-xs tracking-[0.35em] text-[#888] mb-6">
-                        ABOUT LUXORA
+                <div className="max-w-[1500px] mx-auto px-8 lg:px-20 relative pl-8 md:pl-10 lg:pl-12 border-l border-[#1f1f1f]">
+                    {/* Golden vertical accent line */}
+                    <div className="absolute -left-[1px] top-0 h-16 md:h-20 lg:h-24 w-[2px] bg-[#d4af37]" />
+
+                    <div className="relative">
+                        <div className="text-xs tracking-[0.35em] text-[#888] mb-6">
+                            ABOUT LUXORA
+                        </div>
+
+                        <h1 className="font-serif text-6xl md:text-8xl leading-[0.95] tracking-tight mb-10">
+                            Luxury Interior Design &<br />Turnkey Fit-Out in UAE
+                        </h1>
+
+                        <p className="text-[#a8a8a8] text-lg max-w-3xl leading-relaxed">
+                            Luxora Design & Fitout is a Dubai-based luxury interior design and
+                            turnkey fit-out company delivering refined residential, commercial,
+                            retail, and hospitality environments across the UAE. We combine
+                            architectural discipline, premium material selection, and structured
+                            project execution to transform vision into exceptional built reality.
+                        </p>
                     </div>
-
-                    <h1 className="font-serif text-6xl md:text-8xl leading-[0.95] tracking-tight mb-10">
-                        Luxury Interior Design &<br />Turnkey Fit-Out in Dubai
-                    </h1>
-
-                    <p className="text-[#a8a8a8] text-lg max-w-3xl leading-relaxed">
-                        Luxora Design & Fitout is a Dubai-based luxury interior design and
-                        turnkey fit-out company delivering refined residential, commercial,
-                        retail, and hospitality environments across the UAE. We combine
-                        architectural discipline, premium material selection, and structured
-                        project execution to transform vision into exceptional built reality.
-                    </p>
                 </div>
             </section>
 
@@ -110,7 +115,7 @@ export default function ContactPage() {
                                 Execution Precision
                             </h3>
                             <p>
-                                From Dubai authority approvals to final detailing,
+                                From UAE authority approvals to final detailing,
                                 we implement structured coordination, disciplined
                                 timelines, and uncompromising quality control.
                             </p>
@@ -138,11 +143,14 @@ export default function ContactPage() {
                     </h2>
 
                     <ol className="space-y-6 text-[#a8a8a8] text-lg leading-relaxed">
-                        <li>1. Strategic Consultation & Feasibility Assessment</li>
-                        <li>2. Concept Interior Design & 3D Visualization</li>
-                        <li>3. Technical Drawings & Authority Approvals</li>
-                        <li>4. Turnkey Fit-Out Execution & Site Supervision</li>
-                        <li>5. Quality Control, Testing & Final Handover</li>
+                        <li>1. Initial Consultation & Brief Development</li>
+                        <li>2. Concept Design</li>
+                        <li>3. 3D Visualization & Design Development</li>
+                        <li>4. Authority Approvals & Technical Coordination</li>
+                        <li>5. Detailed Engineering & Procurement</li>
+                        <li>6. Fit-Out Execution</li>
+                        <li>7. Quality Assurance & Handover</li>
+                        <li>8. Post-Handover Support</li>
                     </ol>
                 </div>
             </section>
@@ -151,7 +159,7 @@ export default function ContactPage() {
             <section className="py-40 border-t border-[#1a1a1a] text-center">
                 <div className="max-w-[900px] mx-auto px-8">
                     <h2 className="font-serif text-4xl md:text-6xl mb-10">
-                        Start Your Interior Project in Dubai
+                        Start Your Interior Project in UAE
                     </h2>
 
                     <p className="text-[#a8a8a8] text-lg mb-16 leading-relaxed">

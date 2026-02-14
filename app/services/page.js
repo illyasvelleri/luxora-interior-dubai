@@ -6,18 +6,23 @@ export default function ServicesPage() {
 
       {/* HERO */}
       <div className="pt-40 pb-32 border-b border-[#1a1a1a]">
-        <div className="max-w-[1400px] mx-auto px-8 lg:px-20">
-          <div className="text-xs tracking-[0.35em] text-[#888] mb-6">
-            SERVICES
+        <div className="max-w-[1400px] mx-auto px-8 lg:px-20 relative pl-8 md:pl-10 lg:pl-12 border-l border-[#1f1f1f]">
+          {/* Golden vertical accent line */}
+          <div className="absolute -left-[1px] top-0 h-16 md:h-20 lg:h-24 w-[2px] bg-[#d4af37]" />
+
+          <div className="relative">
+            <div className="text-xs tracking-[0.35em] text-[#888] mb-6">
+              SERVICES
+            </div>
+            <h1 className="font-serif text-5xl md:text-7xl tracking-tight leading-[0.95] mb-10">
+              Institutional Interior<br />Architecture & Fit-Out
+            </h1>
+            <p className="text-[#a8a8a8] text-lg max-w-3xl leading-relaxed">
+              LUXORA provides end-to-end interior architecture, authority-compliant
+              design development, and turnkey fit-out delivery for institutional,
+              commercial, and sacred environments across the United Arab Emirates.
+            </p>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl tracking-tight leading-[0.95] mb-10">
-            Institutional Interior<br />Architecture & Fit-Out
-          </h1>
-          <p className="text-[#a8a8a8] text-lg max-w-3xl leading-relaxed">
-            LUXORA provides end-to-end interior architecture, authority-compliant
-            design development, and turnkey fit-out delivery for institutional,
-            commercial, and sacred environments across the United Arab Emirates.
-          </p>
         </div>
       </div>
 
@@ -185,15 +190,17 @@ export default function ServicesPage() {
       <div className="py-40 text-center">
         <div className="max-w-[900px] mx-auto px-8">
           <div className="text-xs tracking-[0.3em] text-[#888] mb-6">
-            PROJECT ENQUIRIES
+            ENQUIRE
           </div>
           <h3 className="font-serif text-4xl md:text-6xl mb-10 tracking-tight">
-            Commission LUXORA
+            Project Typology
           </h3>
-          <p className="text-[#a8a8a8] text-lg mb-16 leading-relaxed">
-            We accept a limited number of institutional commissions annually.
-            Enquiries are reviewed directly by senior leadership.
-          </p>
+          <ul className="text-[#a8a8a8] text-lg mb-16 leading-relaxed space-y-3 max-w-xl mx-auto">
+            <li>1. Hospitality Projects</li>
+            <li>2. Commercial Spaces</li>
+            <li>3. Residential Interiors</li>
+            <li>4. Exhibition & Events</li>
+          </ul>
           <Link
             href="/contact"
             className="inline-block px-16 py-5 border border-[#d4af37]/60 text-[#d4af37] hover:bg-[#d4af37]/10 transition-all duration-700 text-xs tracking-[0.35em]"
