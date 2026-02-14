@@ -10,9 +10,9 @@ export default function ContactForm() {
         <div className="max-w-[900px] mx-auto px-6 sm:px-8 lg:px-20">
             <div className="text-center mb-16 sm:mb-20">
                 <div className="text-xs tracking-[0.3em] text-[#888] mb-4 sm:mb-6">PROJECT ENQUIRIES</div>
-                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8 tracking-tight">Request Consultation</h2>
+                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 sm:mb-8 tracking-tight">Request for Quotations</h2>
                 <p className="text-[#a8a8a8] text-base sm:text-lg leading-relaxed mb-4 sm:mb-6 px-4">
-                    LUXORA undertakes a limited number of commissions annually to ensure execution discipline and design integrity across all active projects.
+                    Luxora is committed to delivering projects defined by precision, execution discipline, and uncompromising design integrity from concept to completion.
                 </p>
             </div>
 

@@ -11,12 +11,20 @@ export default function Footer() {
 
                     {/* Brand */}
                     <div>
-                        <div className="text-xl sm:text-2xl tracking-[0.4em] font-light mb-4 sm:mb-6">
-                            LUXORA
-                        </div>
-                        <p className="text-[#707070] text-sm leading-relaxed">
-                            Design and Fitout
-                        </p>
+                        {/* Logo with tagline */}
+                        <Link href="/" className="flex flex-col items-start">
+                            <div className="flex items-baseline">
+                                <span className="text-lg sm:text-xl tracking-[0.15em] font-bold text-[#d4af37]">
+                                    LUX
+                                </span>
+                                <span className="text-lg sm:text-xl tracking-[0.15em] font-bold text-white">
+                                    ORA
+                                </span>
+                            </div>
+                            <span className="text-[10px] sm:text-xs tracking-[0.35em] text-white/80 font-light mt-1.5">
+                                DESIGN AND FITOUT
+                            </span>
+                        </Link>
                     </div>
 
                     {/* Contact */}
@@ -95,7 +103,7 @@ export default function Footer() {
                 {/* Bottom */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-10 border-t border-[#1a1a1a] text-xs text-[#707070]">
                     <div className="tracking-[0.3em]">
-                        © 2025 – {new Date().getFullYear()} LUXORA INTERIORS
+                        © 2025 – {new Date().getFullYear()} LUXORA DESIGN AND FITOUT
                     </div>
 
                     <div className="flex gap-8 tracking-[0.2em]">

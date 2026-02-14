@@ -23,13 +23,11 @@ export default function ContactPage() {
               </div>
 
               <h1 className="font-serif text-[clamp(2.6rem,4vw,4rem)] leading-[1.05] mb-10">
-                Request a<br />Strategic Consultation
+                Request <br />for Quotations
               </h1>
 
               <p className="text-[#a0a0a0] text-lg leading-relaxed max-w-xl">
-                LUXORA operates as a design-led practice, accepting a limited
-                number of commissions annually to preserve authorship,
-                executional rigor, and architectural clarity.
+                Luxora is committed to delivering projects defined by precision, execution discipline, and uncompromising design integrity from concept to completion.
               </p>
             </div>
 
