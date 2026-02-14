@@ -170,14 +170,14 @@ export default function Navbar() {
                     {/* Logo with tagline – tagline never wider than logo */}
                     <Link href="/" className="flex flex-col items-center">
                         <div className="flex items-baseline">
-                            <span className="text-2xl tracking-[0.14em] font-bold text-[#d4af37]">
+                            <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-[#d4af37]">
                                 LUX
                             </span>
-                            <span className="text-2xl tracking-[0.14em] font-bold text-white">
+                            <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-white">
                                 ORA
                             </span>
                         </div>
-                        <span className="text-[9.5px] sm:text-[10px] tracking-[0.14em] text-white/80 font-light mt-1.5 leading-none whitespace-nowrap">
+                        <span className="text-[9px] sm:text-[10px] tracking-[0.14em] text-white/80 font-light mt-1.5 leading-none whitespace-nowrap">
                             DESIGN AND FITOUT
                         </span>
                     </Link>

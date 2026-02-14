@@ -12,16 +12,16 @@ export default function Footer() {
                     {/* Brand */}
                     <div>
                         {/* Logo with tagline */}
-                        <Link href="/" className="flex flex-col items-start">
+                        <Link href="/" className="flex flex-col items-center">
                             <div className="flex items-baseline">
-                                <span className="text-lg sm:text-xl tracking-[0.15em] font-bold text-[#d4af37]">
+                                <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-[#d4af37]">
                                     LUX
                                 </span>
-                                <span className="text-lg sm:text-xl tracking-[0.15em] font-bold text-white">
+                                <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-white">
                                     ORA
                                 </span>
                             </div>
-                            <span className="text-[10px] sm:text-xs tracking-[0.35em] text-white/80 font-light mt-1.5">
+                            <span className="text-[9px] sm:text-[10px] tracking-[0.14em] text-white/80 font-light mt-1.5 leading-none whitespace-nowrap">
                                 DESIGN AND FITOUT
                             </span>
                         </Link>
