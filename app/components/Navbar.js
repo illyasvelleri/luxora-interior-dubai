@@ -121,6 +121,7 @@
 //     );
 // }
 "use client";
+import Image from "next/image"
 
 import { useState } from "react";
 import Link from "next/link";
@@ -150,36 +151,19 @@ export default function Navbar() {
         <>
             {/* ───────── NAVBAR ───────── */}
             <nav className="fixed top-0 left-0 right-0 z-40 bg-transparent backdrop-blur-sm">
-                <div className="max-w-[1800px] mx-auto px-6 sm:px-8 lg:px-20 py-6 sm:py-8 flex items-center justify-between">
+                <div className="max-w-[1800px] mx-auto px-6 sm:px-8 lg:px-20 py-6 sm:py-2 2xl:py-0 flex items-center justify-between">
 
-                    {/* Logo with tagline */}
-                    {/* <Link href="/" className="flex flex-col items-start">
-                        <div className="flex items-baseline">
-                            <span className="text-lg sm:text-xl tracking-[0.15em] font-bold text-[#d4af37]">
-                                LUX
-                            </span>
-                            <span className="text-lg sm:text-xl tracking-[0.15em] font-bold text-white">
-                                ORA
-                            </span>
-                        </div>
-                        <span className="text-[10px] sm:text-xs tracking-[0.35em] text-white/80 font-light mt-1.5">
-                            DESIGN AND FITOUT
-                        </span>
-                    </Link> */}
 
-                    {/* Logo with tagline – tagline never wider than logo */}
-                    <Link href="/" className="flex flex-col items-center">
-                        <div className="flex items-baseline">
-                            <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-[#d4af37]">
-                                LUX
-                            </span>
-                            <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-white">
-                                ORA
-                            </span>
-                        </div>
-                        <span className="text-[9px] sm:text-[10px] tracking-[0.14em] text-white/80 font-light mt-1.5 leading-none whitespace-nowrap">
-                            DESIGN AND FITOUT
-                        </span>
+                    {/* Logo – using PNG with built-in tagline */}
+                    <Link href="/" className="block">
+                        <Image
+                            src="/logo(png).png"
+                            alt="Luxora Design and Fitout"
+                            width={360}
+                            height={110}
+                            className="h-10 sm:h-20 md:h-20 lg:h-20 xl:h-22 2xl:h-26 w-auto object-contain"
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Nav */}

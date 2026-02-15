@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"
 import { Phone, Mail, MapPin, Globe, Instagram } from "lucide-react";
 
 export default function Footer() {
@@ -11,19 +12,17 @@ export default function Footer() {
 
                     {/* Brand */}
                     <div>
-                        {/* Logo with tagline */}
-                        <Link href="/" className="flex flex-col items-center">
-                            <div className="flex items-baseline">
-                                <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-[#d4af37]">
-                                    LUX
-                                </span>
-                                <span className="text-3xl sm:text-4xl tracking-[0.14em] font-bold text-white">
-                                    ORA
-                                </span>
-                            </div>
-                            <span className="text-[9px] sm:text-[10px] tracking-[0.14em] text-white/80 font-light mt-1.5 leading-none whitespace-nowrap">
-                                DESIGN AND FITOUT
-                            </span>
+
+                        {/* Logo – using PNG with built-in tagline */}
+                        <Link href="/" className="block">
+                            <Image
+                                src="/logo(png).png"
+                                alt="Luxora Design and Fitout"
+                                width={360}
+                                height={110}
+                                className="h-10 sm:h-20 md:h-20 lg:h-20 xl:h-22 2xl:h-26 w-auto object-contain"
+                                priority
+                            />
                         </Link>
                     </div>
 
