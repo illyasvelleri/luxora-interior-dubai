@@ -213,7 +213,7 @@ export default function About() {
           <div className="md:col-span-5 flex justify-center md:justify-end">
             <div className="relative w-full max-w-[450px] aspect-[3/4] overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/interior-02.jpeg"
+                src="/kitchen-view.jpg"
                 alt="Luxury interior fit-out project in UAE"
                 fill
                 sizes="(max-width: 768px) 100vw, 450px"
