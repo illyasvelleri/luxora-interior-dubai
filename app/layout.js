@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
