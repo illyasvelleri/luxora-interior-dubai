@@ -10,7 +10,7 @@ export default function Philosophy() {
                 <div className="grid md:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 xl:gap-32 items-center">
                     <div className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] order-2 md:order-1">
                         <Image
-                            src="/bedroom-view.jpg"
+                            src="/abid-bedroom(01).jpg"
                             alt="Architectural discipline and material integrity in UAE institutional interiors"
                             fill
                             sizes="(max-width: 768px) 100vw, 50vw"

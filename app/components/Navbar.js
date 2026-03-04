@@ -151,7 +151,7 @@ export default function Navbar() {
         <>
             {/* ───────── NAVBAR ───────── */}
             <nav className="fixed top-0 left-0 right-0 z-40 bg-transparent backdrop-blur-sm">
-                <div className="max-w-[1800px] mx-auto px-6 sm:px-8 lg:px-20 py-6 sm:py-2 2xl:py-0 flex items-center justify-between">
+                <div className="max-w-[1800px] mx-auto px-6 sm:px-8 lg:px-20 py-4 sm:py-2 md:py-4 2xl:py-4 flex items-center justify-between">
 
 
                     {/* Logo – using PNG with built-in tagline */}
@@ -161,7 +161,7 @@ export default function Navbar() {
                             alt="Luxora Design and Fitout"
                             width={360}
                             height={110}
-                            className="h-10 sm:h-20 md:h-20 lg:h-20 xl:h-22 2xl:h-26 w-auto object-contain"
+                            className="h-7 sm:h-10 md:h-12 lg:h-14 xl:h-14 w-auto object-contain"
                             priority
                         />
                     </Link>
